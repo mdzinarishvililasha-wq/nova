@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lumina - Next-generation creative intelligence platform designed to streamline your workflows with speed, precision, and elegance.">
+  <meta name="keywords" content="modern landing page, SaaS platform, creative intelligence, workflow automation, modern design">
+  <title>Lumina &mdash; Design, Build & Scale at the Speed of Thought</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Ambient background glow elements -->
+  <div class="ambient-glow glow-top" aria-hidden="true"></div>
+  <div class="ambient-glow glow-bottom" aria-hidden="true"></div>
+
+  <!-- Announcement Bar -->
+  <aside class="top-announcement" aria-label="Announcement">
+    <div class="container announcement-content">
+      <span class="badge-pill">New Feature</span>
+      <span class="announcement-text">Lumina 2.4 is live: Supercharge your workflow with real-time neural sync.</span>
+      <a href="#features" class="announcement-link">Explore Release Notes &rarr;</a>
+    </div>
+  </aside>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-container">
+      <a href="#hero" class="brand-logo" aria-label="Lumina Home">
+        <span class="logo-symbol">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+            <polyline points="2 17 12 22 22 17"></polyline>
+            <polyline points="2 12 12 17 22 12"></polyline>
+          </svg>
+        </span>
+        <span class="logo-text">Lumina<span class="logo-dot">.</span></span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-menu" id="navMenu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#features" class="nav-link">Features</a></li>
+          <li><a href="#preview" class="nav-link">Platform</a></li>
+          <li><a href="#workflow" class="nav-link">How it Works</a></li>
+          <li><a href="#pricing" class="nav-link">Pricing</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action items: Theme Toggle & CTAs -->
+      <div class="header-actions">
+        <!-- Theme toggle button -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle visual theme" title="Switch Theme">
+          <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <a href="#pricing" class="btn btn-secondary nav-btn-signin">Sign In</a>
+        <a href="#pricing" class="btn btn-primary nav-btn-cta ripple-btn">
+          <span>Get Started Free</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Open mobile menu" aria-expanded="false" aria-controls="mobileDrawer">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Navigation -->
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="mobile-drawer-content">
+      <nav class="mobile-nav">
+        <ul>
+          <li><a href="#hero" class="mobile-nav-link">Home</a></li>
+          <li><a href="#features" class="mobile-nav-link">Features</a></li>
+          <li><a href="#preview" class="mobile-nav-link">Platform</a></li>
+          <li><a href="#workflow" class="mobile-nav-link">How it Works</a></li>
+          <li><a href="#pricing" class="mobile-nav-link">Pricing</a></li>
+          <li><a href="#faq" class="mobile-nav-link">FAQ</a></li>
+        </ul>
+      </nav>
+      <div class="mobile-drawer-actions">
+        <a href="#pricing" class="btn btn-secondary w-full">Sign In</a>
+        <a href="#pricing" class="btn btn-primary w-full ripple-btn">Get Started Free</a>
+      </div>
+    </div>
+  </div>
+  <div class="drawer-overlay" id="drawerOverlay" aria-hidden="true"></div>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        
+        <!-- Hero Header Info -->
+        <div class="hero-badge reveal-fade">
+          <span class="badge-icon">⚡</span>
+          <span class="badge-text">Next-Gen Creative Operating System</span>
+          <span class="badge-tag">v2.4 Released</span>
+        </div>
+
+        <h1 class="hero-title reveal-fade" style="--delay: 100ms;">
+          Design, Build & Scale with<br>
+          <span class="highlight-wrapper">
+            <span class="typewriter-text" id="typewriterText">Infinite Speed</span>
+            <span class="typewriter-cursor"></span>
+          </span>
+        </h1>
+
+        <p class="hero-subtitle reveal-fade" style="--delay: 200ms;">
+          Lumina brings design intelligence, modular component synthesis, and distributed collaboration into a single, breathtaking workspace. Built for creators who refuse to compromise.
+        </p>
+
+        <!-- Hero CTAs -->
+        <div class="hero-cta-group reveal-fade" style="--delay: 300ms;">
+          <a href="#pricing" class="btn btn-primary btn-lg ripple-btn pulse-glow" id="heroPrimaryCta">
+            <span>Start Free Trial</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <button class="btn btn-glass btn-lg" id="openDemoBtn" aria-label="Watch interactive demo">
+            <svg class="play-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <polygon points="5 3 19 12 5 21 5 3"></polygon>
+            </svg>
+            <span>Live Interactive Demo</span>
+          </button>
+        </div>
+
+        <!-- Social Proof Stats Mini-Row -->
+        <div class="hero-stats-mini reveal-fade" style="--delay: 400ms;">
+          <div class="avatar-stack">
+            <span class="avatar-img av-1" title="Elena Rostova">ER</span>
+            <span class="avatar-img av-2" title="Marcus Vance">MV</span>
+            <span class="avatar-img av-3" title="Sarah Chen">SC</span>
+            <span class="avatar-img av-4" title="David Kroll">DK</span>
+            <span class="avatar-count">+45k</span>
+          </div>
+          <div class="rating-box">
+            <div class="stars" aria-label="5 star rating">★★★★★</div>
+            <span class="rating-text">Loved by over <strong>45,000+</strong> designers & developers</span>
+          </div>
+        </div>
+
+        <!-- Interactive 3D Hero Mockup Container -->
+        <div class="hero-mockup-wrap reveal-scale" style="--delay: 500ms;">
+          <div class="mockup-tilt-card" id="mockupCard">
+            <!-- Window frame bar -->
+            <div class="mockup-header">
+              <div class="window-controls">
+                <span class="control-dot dot-red"></span>
+                <span class="control-dot dot-yellow"></span>
+                <span class="control-dot dot-green"></span>
+              </div>
+              <div class="window-address-bar">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                </svg>
+                <span>app.lumina.io/workspace/neural-orchestration</span>
+              </div>
+              <div class="mockup-status-indicator">
+                <span class="status-pulse"></span>
+                <span class="status-label">Active Engine: 60 FPS</span>
+              </div>
+            </div>
+
+            <!-- Mockup Interactive Workspace Body -->
+            <div class="mockup-body">
+              <!-- Sidebar inside mockup -->
+              <aside class="mockup-sidebar">
+                <div class="sidebar-item active">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="3" width="7" height="7"></rect>
+                    <rect x="14" y="3" width="7" height="7"></rect>
+                    <rect x="14" y="14" width="7" height="7"></rect>
+                    <rect x="3" y="14" width="7" height="7"></rect>
+                  </svg>
+                  <span>Dashboard</span>
+                </div>
+                <div class="sidebar-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                  </svg>
+                  <span>Analytics</span>
+                </div>
+                <div class="sidebar-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                  </svg>
+                  <span>Automations</span>
+                </div>
+                <div class="sidebar-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="3"></circle>
+                    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                  </svg>
+                  <span>Settings</span>
+                </div>
+              </aside>
+
+              <!-- Main interactive panel inside mockup -->
+              <div class="mockup-main-panel">
+                <!-- Panel Header with interactive pill filters -->
+                <div class="panel-header-row">
+                  <div>
+                    <h3 class="panel-title">Production Cluster Health</h3>
+                    <p class="panel-desc">Real-time latency & neural deployment throughput</p>
+                  </div>
+                  <div class="interactive-pills">
+                    <button class="pill-btn active" data-range="live">Live</button>
+                    <button class="pill-btn" data-range="24h">24h</button>
+                    <button class="pill-btn" data-range="7d">7d</button>
+                  </div>
+                </div>
+
+                <!-- Metric Cards Row -->
+                <div class="mockup-metric-grid">
+                  <div class="metric-card">
+                    <div class="metric-top">
+                      <span class="metric-name">Global Latency</span>
+                      <span class="badge-growth positive">&darr; 8ms</span>
+                    </div>
+                    <div class="metric-value" id="demoLatency">14.2 ms</div>
+                    <div class="metric-sub">P99 across 32 edge regions</div>
+                  </div>
+
+                  <div class="metric-card">
+                    <div class="metric-top">
+                      <span class="metric-name">Sync Concurrency</span>
+                      <span class="badge-growth positive">&uarr; 34%</span>
+                    </div>
+                    <div class="metric-value" id="demoConcurrency">99.98%</div>
+                    <div class="metric-sub">Zero packets dropped</div>
+                  </div>
+
+                  <div class="metric-card">
+                    <div class="metric-top">
+                      <span class="metric-name">Throughput</span>
+                      <span class="badge-growth positive">&uarr; 4.8x</span>
+                    </div>
+                    <div class="metric-value" id="demoThroughput">2.4M req/s</div>
+                    <div class="metric-sub">Auto-balanced pipeline</div>
+                  </div>
+                </div>
+
+                <!-- Animated Interactive Chart Graphic -->
+                <div class="chart-container">
+                  <div class="chart-header">
+                    <span class="chart-label">Live Throughput Stream</span>
+                    <span class="live-dot-tag"><span class="pulsing-circle"></span>Streaming Realtime</span>
+                  </div>
+                  <!-- SVG Live animated wave -->
+                  <div class="chart-svg-wrap">
+                    <svg class="chart-svg" viewBox="0 0 600 120" preserveAspectRatio="none">
+                      <defs>
+                        <linearGradient id="chartGradient" x1="0" y1="0" x2="0" y2="1">
+                          <stop offset="0%" stop-color="var(--accent-primary)" stop-opacity="0.45"/>
+                          <stop offset="100%" stop-color="var(--accent-primary)" stop-opacity="0.0"/>
+                        </linearGradient>
+                      </defs>
+                      <path class="chart-area" d="M0,80 Q75,30 150,60 T300,40 T450,20 T600,50 L600,120 L0,120 Z" fill="url(#chartGradient)"></path>
+                      <path class="chart-line" d="M0,80 Q75,30 150,60 T300,40 T450,20 T600,50" fill="none" stroke="var(--accent-primary)" stroke-width="2.5"></path>
+                    </svg>
+                  </div>
+                </div>
+
+                <!-- Interactive control bar inside mockup -->
+                <div class="mockup-action-strip">
+                  <div class="action-info">
+                    <span class="action-tag">Interactive Simulation:</span>
+                    <span class="action-subtext">Click to trigger an instant optimization cycle</span>
+                  </div>
+                  <button class="btn btn-sm btn-primary" id="triggerOptimizeBtn">
+                    <span>Run Optimization</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                      <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- LOGO CLOUD / TRUSTED BY -->
+    <section class="trust-section" aria-label="Trusted Companies">
+      <div class="container">
+        <p class="trust-title reveal-fade">TRUSTED BY ENGINEERING & DESIGN TEAMS WORLDWIDE</p>
+        <div class="logo-marquee reveal-fade" style="--delay: 100ms;">
+          <div class="brand-item"><span class="brand-logo-icon">▲</span> VORTEX</div>
+          <div class="brand-item"><span class="brand-logo-icon">◈</span> SPHERA</div>
+          <div class="brand-item"><span class="brand-logo-icon">⬡</span> KRONOS</div>
+          <div class="brand-item"><span class="brand-logo-icon">✦</span> SYNAPSE</div>
+          <div class="brand-item"><span class="brand-logo-icon">◉</span> OMNI_LABS</div>
+          <div class="brand-item"><span class="brand-logo-icon">❖</span> VELOCITY</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CORE FEATURES (Bento Grid) -->
+    <section class="section features-section" id="features">
+      <div class="container">
+        <div class="section-header text-center reveal-fade">
+          <span class="section-tag">ENGINEERED FOR EXCELLENCE</span>
+          <h2 class="section-title">Everything you need to ship faster. Without the friction.</h2>
+          <p class="section-subtitle">
+            Built from first principles with modern ergonomics, zero-configuration sync, and ultra-crisp interactions.
+          </p>
+        </div>
+
+        <!-- Bento Grid layout -->
+        <div class="bento-grid">
+          
+          <!-- Bento Item 1: Large feature card -->
+          <div class="bento-card bento-span-2 spotlight-card reveal-up">
+            <div class="card-glow"></div>
+            <div class="card-content">
+              <div class="card-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                </svg>
+              </div>
+              <h3 class="card-title">Instantaneous Edge Execution</h3>
+              <p class="card-text">
+                Distribute your computation across 300+ edge clusters worldwide. With intelligent route prediction, client latency drops below human perception thresholds.
+              </p>
+              
+              <!-- Interactive latency playground inside card -->
+              <div class="feature-interactive-bar">
+                <div class="slider-row">
+                  <label for="latencyRange">Global Cluster Load Simulator:</label>
+                  <span id="sliderValueText" class="slider-badge">75% Load (11ms)</span>
+                </div>
+                <input type="range" id="latencyRange" class="modern-slider" min="10" max="100" value="75">
+                <div class="cluster-indicators">
+                  <span class="cluster-node online" title="Tokyo Node">NRT: 9ms</span>
+                  <span class="cluster-node online" title="Frankfurt Node">FRA: 12ms</span>
+                  <span class="cluster-node online" title="San Francisco Node">SFO: 8ms</span>
+                  <span class="cluster-node online" title="São Paulo Node">GRU: 19ms</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bento Item 2: Real-time Multi-User Collab -->
+          <div class="bento-card spotlight-card reveal-up" style="--delay: 150ms;">
+            <div class="card-glow"></div>
+            <div class="card-content">
+              <div class="card-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <h3 class="card-title">Sub-millisecond Sync</h3>
+              <p class="card-text">
+                Multiplayer collaboration with zero lockouts or conflict resolution headaches. Edit code, nodes, and layouts in seamless unison.
+              </p>
+              <!-- Live simulated cursor box -->
+              <div class="cursor-sandbox" id="cursorSandbox">
+                <div class="sim-cursor cursor-1">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="#6366f1">
+                    <polygon points="3 3 10 21 14 14 21 10 3 3"></polygon>
+                  </svg>
+                  <span class="cursor-tag tag-alex">Alex (Design)</span>
+                </div>
+                <div class="sim-cursor cursor-2">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="#06b6d4">
+                    <polygon points="3 3 10 21 14 14 21 10 3 3"></polygon>
+                  </svg>
+                  <span class="cursor-tag tag-sarah">Sarah (Lead Dev)</span>
+                </div>
+                <div class="sandbox-prompt">Hover inside to simulate collaborative canvas</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bento Item 3: Automated Synthesis -->
+          <div class="bento-card spotlight-card reveal-up" style="--delay: 200ms;">
+            <div class="card-glow"></div>
+            <div class="card-content">
+              <div class="card-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <h3 class="card-title">Intelligent Code Generation</h3>
+              <p class="card-text">
+                Transform visual states and interactive prototypes directly into production-ready, clean semantic HTML, CSS, and TypeScript modules.
+              </p>
+              <div class="code-pill-preview">
+                <code>&lt;Lumina.Component mode="adaptive" /&gt;</code>
+                <span class="copy-badge" id="copyCodeBadge">Copy Snippet</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bento Item 4: Bank-Grade Security -->
+          <div class="bento-card bento-span-2 spotlight-card reveal-up" style="--delay: 250ms;">
+            <div class="card-glow"></div>
+            <div class="card-content">
+              <div class="card-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                </svg>
+              </div>
+              <h3 class="card-title">End-to-End Cryptographic Security</h3>
+              <p class="card-text">
+                SOC-2 Type II compliant, zero-knowledge encryption with custom key management, strict RBAC controls, and automated audit logs for enterprise readiness.
+              </p>
+              <div class="security-badges-row">
+                <span class="security-chip">✓ SOC 2 Certified</span>
+                <span class="security-chip">✓ AES-256 GCM</span>
+                <span class="security-chip">✓ GDPR & HIPAA Compliant</span>
+                <span class="security-chip">✓ SSO / SAML Integration</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE PLATFORM PREVIEW TABS -->
+    <section class="section platform-section" id="preview">
+      <div class="container">
+        <div class="section-header text-center reveal-fade">
+          <span class="section-tag">UNIFIED ECOSYSTEM</span>
+          <h2 class="section-title">Designed for how modern teams actually think.</h2>
+          <p class="section-subtitle">
+            Toggle between specialized modes tailored for rapid brainstorming, rigorous system architecture, and automated shipping.
+          </p>
+        </div>
+
+        <!-- Tab Controls -->
+        <div class="tab-controls reveal-fade" role="tablist">
+          <button class="tab-btn active" role="tab" aria-selected="true" data-tab="tab-canvas">
+            <span class="tab-icon">🎨</span>
+            <span>Visual Canvas</span>
+          </button>
+          <button class="tab-btn" role="tab" aria-selected="false" data-tab="tab-pipeline">
+            <span class="tab-icon">⚡</span>
+            <span>Neural Pipeline</span>
+          </button>
+          <button class="tab-btn" role="tab" aria-selected="false" data-tab="tab-telemetry">
+            <span class="tab-icon">📊</span>
+            <span>Telemetry & Logs</span>
+          </button>
+        </div>
+
+        <!-- Tab Panels -->
+        <div class="tab-panels-wrapper reveal-scale">
+          
+          <!-- Tab 1: Visual Canvas -->
+          <div class="tab-panel active" id="tab-canvas" role="tabpanel">
+            <div class="panel-inner-grid">
+              <div class="panel-text-side">
+                <span class="badge-pill">Infinite Canvas</span>
+                <h3>Fluid layout generation with zero layout shifts</h3>
+                <p>
+                  Compose fluid interfaces with auto-responsive constraints. Test across viewports in real time while your styles automatically compile to efficient, minimal CSS.
+                </p>
+                <ul class="check-list">
+                  <li><span class="check-bullet">✓</span> Live cross-viewport preview simulator</li>
+                  <li><span class="check-bullet">✓</span> Automated CSS variable token extraction</li>
+                  <li><span class="check-bullet">✓</span> Interactive gesture and hover transition tuning</li>
+                </ul>
+                <button class="btn btn-secondary mt-4 interactive-demo-trigger" data-feature="canvas">
+                  Launch Canvas Sandbox &rarr;
+                </button>
+              </div>
+              <div class="panel-graphic-side">
+                <div class="canvas-mockup-graphic">
+                  <div class="graphic-toolbar">
+                    <span class="tool-btn active">Selection</span>
+                    <span class="tool-btn">Shapes</span>
+                    <span class="tool-btn">Frames</span>
+                    <span class="tool-btn">Components</span>
+                  </div>
+                  <div class="graphic-viewport">
+                    <div class="graphic-element box-1">
+                      <span class="el-tag">Hero Container</span>
+                      <div class="mini-bar"></div>
+                      <div class="mini-bar w-60"></div>
+                    </div>
+                    <div class="graphic-element box-2">
+                      <span class="el-tag">Button::Primary</span>
+                      <span class="pulse-mini"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab 2: Neural Pipeline -->
+          <div class="tab-panel" id="tab-pipeline" role="tabpanel">
+            <div class="panel-inner-grid">
+              <div class="panel-text-side">
+                <span class="badge-pill">Autonomous Execution</span>
+                <h3>Self-healing CI/CD with automated dependency resolution</h3>
+                <p>
+                  Every push is inspected by an intelligent pipeline that spots performance regressions, bundles unused code, and optimizes visual assets before deployment.
+                </p>
+                <ul class="check-list">
+                  <li><span class="check-bullet">✓</span> Sub-second delta caching system</li>
+                  <li><span class="check-bullet">✓</span> Automated bundle footprint budget alerts</li>
+                  <li><span class="check-bullet">✓</span> Zero-downtime atomic blue/green rollouts</li>
+                </ul>
+                <button class="btn btn-secondary mt-4 interactive-demo-trigger" data-feature="pipeline">
+                  Inspect Build Pipeline &rarr;
+                </button>
+              </div>
+              <div class="panel-graphic-side">
+                <div class="pipeline-mockup-graphic">
+                  <div class="pipeline-step completed">
+                    <div class="step-icon">✓</div>
+                    <div class="step-details">
+                      <strong>Code Lint & Static Analysis</strong>
+                      <span>284 checks passed in 140ms</span>
+                    </div>
+                  </div>
+                  <div class="pipeline-connector"></div>
+                  <div class="pipeline-step completed">
+                    <div class="step-icon">✓</div>
+                    <div class="step-details">
+                      <strong>Asset Optimization & Minification</strong>
+                      <span>Saved 48% payload size</span>
+                    </div>
+                  </div>
+                  <div class="pipeline-connector"></div>
+                  <div class="pipeline-step active">
+                    <div class="step-icon spinning">⟳</div>
+                    <div class="step-details">
+                      <strong>Edge Node Propagation</strong>
+                      <span>Deploying across 32 worldwide nodes...</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab 3: Telemetry & Logs -->
+          <div class="tab-panel" id="tab-telemetry" role="tabpanel">
+            <div class="panel-inner-grid">
+              <div class="panel-text-side">
+                <span class="badge-pill">Deep Observability</span>
+                <h3>Granular client-side performance insights at a glance</h3>
+                <p>
+                  Monitor Core Web Vitals, interaction timings, and client errors in real time. Gain instant root-cause analysis directly mapped to your source code lines.
+                </p>
+                <ul class="check-list">
+                  <li><span class="check-bullet">✓</span> LCP, FID, and CLS score telemetry</li>
+                  <li><span class="check-bullet">✓</span> Anonymized user interaction session recordings</li>
+                  <li><span class="check-bullet">✓</span> Instant rollback triggers on anomaly spikes</li>
+                </ul>
+                <button class="btn btn-secondary mt-4 interactive-demo-trigger" data-feature="telemetry">
+                  View Real-time Metrics &rarr;
+                </button>
+              </div>
+              <div class="panel-graphic-side">
+                <div class="telemetry-mockup-graphic">
+                  <div class="terminal-header">
+                    <span class="term-dot"></span>
+                    <span class="term-title">system-diagnostics.log</span>
+                  </div>
+                  <div class="terminal-body" id="liveTerminalOutput">
+                    <div class="log-line"><span class="log-time">19:30:12</span> <span class="log-info">[INFO]</span> Cluster sync verified. Status 200 OK.</div>
+                    <div class="log-line"><span class="log-time">19:30:13</span> <span class="log-success">[SUCCESS]</span> LCP measured at 0.64s (Rating: Good).</div>
+                    <div class="log-line"><span class="log-time">19:30:15</span> <span class="log-info">[INFO]</span> Cache hit ratio 99.4% on edge-frankfurt.</div>
+                    <div class="log-line"><span class="log-time">19:30:18</span> <span class="log-success">[DEPLOY]</span> Node 12 auto-scaled +4 instances.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS / WORKFLOW TIMELINE -->
+    <section class="section workflow-section" id="workflow">
+      <div class="container">
+        <div class="section-header text-center reveal-fade">
+          <span class="section-tag">EFFORTLESS INTEGRATION</span>
+          <h2 class="section-title">From blank slate to production in three steps.</h2>
+          <p class="section-subtitle">
+            No complex configuration files or lengthy onboarding seminars required.
+          </p>
+        </div>
+
+        <div class="steps-grid">
+          <!-- Step 1 -->
+          <div class="step-card reveal-up" style="--delay: 100ms;">
+            <div class="step-number">01</div>
+            <div class="step-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M12 8v8M8 12h8"></path>
+              </svg>
+            </div>
+            <h3 class="step-title">Connect Your Stack</h3>
+            <p class="step-description">
+              Hook into your GitHub, GitLab, or local repository with a single terminal command. Lumina automatically indexes your schemas and dependencies.
+            </p>
+            <div class="step-footer-tag">One-click Git Auth</div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="step-card reveal-up" style="--delay: 200ms;">
+            <div class="step-number">02</div>
+            <div class="step-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 20h9"></path>
+                <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+              </svg>
+            </div>
+            <h3 class="step-title">Design & Iterate Dynamically</h3>
+            <p class="step-description">
+              Craft interactive states, preview typography, and tweak animations on an infinite responsive canvas with instant visual feedback.
+            </p>
+            <div class="step-footer-tag">Realtime Hot Reload</div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="step-card reveal-up" style="--delay: 300ms;">
+            <div class="step-number">03</div>
+            <div class="step-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+            </div>
+            <h3 class="step-title">Ship Globally in Milliseconds</h3>
+            <p class="step-description">
+              Push to production with automated edge optimization, custom domains, and instant global CDN invalidation with zero downtime.
+            </p>
+            <div class="step-footer-tag">Atomic Deployments</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LIVE STATS COUNTER BAR -->
+    <section class="section stats-counter-section">
+      <div class="container">
+        <div class="stats-counter-grid">
+          <div class="counter-card reveal-up" style="--delay: 100ms;">
+            <div class="counter-number" data-target="99.99" data-decimals="2" data-suffix="%">0.00%</div>
+            <div class="counter-label">Historical Uptime SLA</div>
+          </div>
+          <div class="counter-card reveal-up" style="--delay: 200ms;">
+            <div class="counter-number" data-target="14" data-decimals="0" data-suffix="ms">0ms</div>
+            <div class="counter-label">Average P95 Global Latency</div>
+          </div>
+          <div class="counter-card reveal-up" style="--delay: 300ms;">
+            <div class="counter-number" data-target="450" data-decimals="0" data-suffix="k+">0k+</div>
+            <div class="counter-label">Active Deployments</div>
+          </div>
+          <div class="counter-card reveal-up" style="--delay: 400ms;">
+            <div class="counter-number" data-target="160" data-decimals="0" data-suffix="+">0+</div>
+            <div class="counter-label">Countries Supported</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING SECTION -->
+    <section class="section pricing-section" id="pricing">
+      <div class="container">
+        <div class="section-header text-center reveal-fade">
+          <span class="section-tag">HONEST & FLEXIBLE</span>
+          <h2 class="section-title">Predictable plans for teams of every scale.</h2>
+          <p class="section-subtitle">
+            Start for free, test with zero commitment, and scale as your traffic accelerates.
+          </p>
+
+          <!-- Monthly / Annual Toggle Switch -->
+          <div class="billing-toggle-wrapper">
+            <span class="toggle-label" id="monthlyLabel">Monthly</span>
+            <label class="toggle-switch" for="billingSwitch">
+              <input type="checkbox" id="billingSwitch" aria-label="Toggle annual billing">
+              <span class="toggle-slider"></span>
+            </label>
+            <span class="toggle-label" id="annualLabel">
+              Annually <span class="discount-badge">Save 20%</span>
+            </span>
+          </div>
+        </div>
+
+        <div class="pricing-grid">
+          <!-- Starter Tier -->
+          <div class="pricing-card reveal-up" style="--delay: 100ms;">
+            <div class="pricing-card-header">
+              <h3 class="tier-name">Starter</h3>
+              <p class="tier-desc">Ideal for solo creators, side-projects, and personal experiments.</p>
+              <div class="price-box">
+                <span class="currency">$</span>
+                <span class="price-val" data-monthly="0" data-annual="0">0</span>
+                <span class="billing-cycle">/ forever</span>
+              </div>
+            </div>
+            <ul class="pricing-features">
+              <li><span class="check-icon">✓</span> 3 Active projects</li>
+              <li><span class="check-icon">✓</span> Up to 10k monthly requests</li>
+              <li><span class="check-icon">✓</span> Community Discord support</li>
+              <li><span class="check-icon">✓</span> Standard edge caching</li>
+              <li class="disabled"><span class="cross-icon">✕</span> Custom domain SSL</li>
+              <li class="disabled"><span class="cross-icon">✕</span> Realtime collaboration</li>
+            </ul>
+            <button class="btn btn-secondary w-full select-plan-btn" data-plan="Starter">Get Started Free</button>
+          </div>
+
+          <!-- Pro Tier (Popular) -->
+          <div class="pricing-card featured reveal-up" style="--delay: 200ms;">
+            <div class="popular-ribbon">Most Popular</div>
+            <div class="pricing-card-header">
+              <h3 class="tier-name">Pro Studio</h3>
+              <p class="tier-desc">For fast-moving product teams, agencies, and high-growth apps.</p>
+              <div class="price-box">
+                <span class="currency">$</span>
+                <span class="price-val" data-monthly="29" data-annual="23">29</span>
+                <span class="billing-cycle">/ seat / month</span>
+              </div>
+            </div>
+            <ul class="pricing-features">
+              <li><span class="check-icon">✓</span> <strong>Unlimited</strong> active projects</li>
+              <li><span class="check-icon">✓</span> 500k monthly fast requests</li>
+              <li><span class="check-icon">✓</span> Sub-millisecond multiplayer sync</li>
+              <li><span class="check-icon">✓</span> Custom domains & automated SSL</li>
+              <li><span class="check-icon">✓</span> Priority email & chat support (2h SLA)</li>
+              <li><span class="check-icon">✓</span> Advanced telemetry & audit logs</li>
+            </ul>
+            <button class="btn btn-primary w-full ripple-btn select-plan-btn" data-plan="Pro Studio">
+              <span>Start 14-Day Free Trial</span>
+            </button>
+          </div>
+
+          <!-- Enterprise Tier -->
+          <div class="pricing-card reveal-up" style="--delay: 300ms;">
+            <div class="pricing-card-header">
+              <h3 class="tier-name">Enterprise</h3>
+              <p class="tier-desc">Tailored governance, dedicated hardware, and compliance for organizations.</p>
+              <div class="price-box">
+                <span class="currency">$</span>
+                <span class="price-val" data-monthly="99" data-annual="79">99</span>
+                <span class="billing-cycle">/ seat / month</span>
+              </div>
+            </div>
+            <ul class="pricing-features">
+              <li><span class="check-icon">✓</span> Everything in Pro Studio</li>
+              <li><span class="check-icon">✓</span> Dedicated isolated edge hardware</li>
+              <li><span class="check-icon">✓</span> 99.99% custom uptime SLA guarantee</li>
+              <li><span class="check-icon">✓</span> SAML / SSO & Okta directory sync</li>
+              <li><span class="check-icon">✓</span> Dedicated Technical Account Manager</li>
+              <li><span class="check-icon">✓</span> Custom security review & DPA</li>
+            </ul>
+            <button class="btn btn-secondary w-full select-plan-btn" data-plan="Enterprise">Contact Enterprise</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS / WALL OF PRAISE -->
+    <section class="section testimonials-section">
+      <div class="container">
+        <div class="section-header text-center reveal-fade">
+          <span class="section-tag">COMMUNITY VOICES</span>
+          <h2 class="section-title">Loved by the world's most exacting teams.</h2>
+          <p class="section-subtitle">
+            Discover how leading organizations accelerated their release cadences by 400%.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card reveal-up" style="--delay: 100ms;">
+            <div class="stars-row">★★★★★</div>
+            <p class="testimonial-text">
+              “Lumina completely transformed how our frontend engineering and design units interact. What used to take three weeks of back-and-forth now gets deployed in under an hour.”
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar author-1">SL</div>
+              <div class="author-info">
+                <strong>Sophia Larson</strong>
+                <span>VP of Product @ Hyperion</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card reveal-up" style="--delay: 200ms;">
+            <div class="stars-row">★★★★★</div>
+            <p class="testimonial-text">
+              “The responsiveness and micro-interactions in Lumina set an entirely new benchmark. It feels like an extension of your mind rather than just another dashboard.”
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar author-2">DK</div>
+              <div class="author-info">
+                <strong>Dmitri Kozlov</strong>
+                <span>Lead Architect @ Chrono Labs</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card reveal-up" style="--delay: 300ms;">
+            <div class="stars-row">★★★★★</div>
+            <p class="testimonial-text">
+              “We migrated 40+ microfrontends over a single weekend. Our global P95 latency dropped by 68% on day one. The ROI was virtually instantaneous.”
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar author-3">AL</div>
+              <div class="author-info">
+                <strong>Aisha Lin</strong>
+                <span>Head of Engineering @ Nexus</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FREQUENTLY ASKED QUESTIONS (ACCORDION) -->
+    <section class="section faq-section" id="faq">
+      <div class="container max-w-narrow">
+        <div class="section-header text-center reveal-fade">
+          <span class="section-tag">COMMON INQUIRIES</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-subtitle">Have questions? We have answers. Can't find what you need? Reach out directly.</p>
+        </div>
+
+        <div class="accordion-wrapper reveal-up">
+          
+          <div class="accordion-item active">
+            <button class="accordion-header" aria-expanded="true">
+              <span class="accordion-question">How does Lumina integrate with existing frontend frameworks?</span>
+              <span class="accordion-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </span>
+            </button>
+            <div class="accordion-body">
+              <div class="accordion-content">
+                Lumina is completely framework-agnostic. Whether you write clean vanilla HTML/CSS/JS, React, Vue, Svelte, or Next.js, our edge runtime integrates through standard Web APIs and zero-overhead SDK connectors.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span class="accordion-question">Is there a free trial, and is a credit card required?</span>
+              <span class="accordion-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </span>
+            </button>
+            <div class="accordion-body">
+              <div class="accordion-content">
+                No credit card is required to begin. Our Starter tier is free forever, and all paid tiers include a complimentary 14-day fully featured trial with zero obligations.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span class="accordion-question">How does multiplayer live sync handle offline modes?</span>
+              <span class="accordion-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </span>
+            </button>
+            <div class="accordion-body">
+              <div class="accordion-content">
+                Lumina utilizes an optimistic CRDT (Conflict-free Replicated Data Type) engine. You can make edits completely offline, and upon reconnecting, your changes will merge seamlessly without losing a single keystroke or conflicting with teammates.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span class="accordion-question">Can I export my code and host it on my own servers?</span>
+              <span class="accordion-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </span>
+            </button>
+            <div class="accordion-body">
+              <div class="accordion-content">
+                Yes! We firmly believe in zero vendor lock-in. You can download complete production-ready source code bundles at any point or configure automated pushes to your self-hosted Kubernetes or Docker clusters.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PRE-FOOTER CTA BANNER -->
+    <section class="section prefooter-cta-section">
+      <div class="container">
+        <div class="cta-banner-card reveal-scale">
+          <div class="cta-glow-effect"></div>
+          <div class="cta-content">
+            <span class="badge-pill mb-3">Instant Access</span>
+            <h2 class="cta-title">Ready to build the future of software?</h2>
+            <p class="cta-subtitle">
+              Join tens of thousands of developers crafting lightning-fast, visually stunning applications with Lumina.
+            </p>
+
+            <form class="cta-form" id="newsletterForm" onsubmit="return false;">
+              <div class="input-wrapper">
+                <svg class="mail-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <input type="email" id="emailInput" class="cta-input" placeholder="Enter your work email..." required>
+              </div>
+              <button type="submit" class="btn btn-primary ripple-btn cta-submit-btn" id="subscribeBtn">
+                <span>Start Free Trial</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+            </form>
+            <div class="cta-guarantee">
+              <span>🔒 14-day free trial</span>
+              <span>•</span>
+              <span>⚡ Setup in 60 seconds</span>
+              <span>•</span>
+              <span>💳 No credit card required</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <!-- Brand column -->
+        <div class="footer-col brand-col">
+          <a href="#hero" class="brand-logo footer-logo">
+            <span class="logo-symbol">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+            </span>
+            <span class="logo-text">Lumina<span class="logo-dot">.</span></span>
+          </a>
+          <p class="footer-tagline">
+            Empowering creative teams to design, iterate, and ship at the speed of thought. Clean code, modern craft, zero friction.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-btn" aria-label="GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="Twitter">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+              </svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="Discord">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 6h0a14.5 14.5 0 0 0-4-1.2 11.5 11.5 0 0 0-.5 1.5 13.6 13.6 0 0 0-3 0 11.5 11.5 0 0 0-.5-1.5A14.5 14.5 0 0 0 6 6a15.8 15.8 0 0 0-2 11 14.5 14.5 0 0 0 4.5 2.3 11 11 0 0 0 1-1.6 9.4 9.4 0 0 1-1.6-.8l.4-.3a10.4 10.4 0 0 0 7.4 0l.4.3a9.4 9.4 0 0 1-1.6.8 11 11 0 0 0 1 1.6 14.5 14.5 0 0 0 4.5-2.3 15.8 15.8 0 0 0-2-11z"></path>
+                <circle cx="9" cy="12" r="1.5"></circle>
+                <circle cx="15" cy="12" r="1.5"></circle>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Links column 1 -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Product</h4>
+          <ul class="footer-nav">
+            <li><a href="#features">Overview</a></li>
+            <li><a href="#preview">Platform Capabilities</a></li>
+            <li><a href="#pricing">Pricing Plans</a></li>
+            <li><a href="#workflow">Release Notes 2.4</a></li>
+            <li><a href="#hero">Roadmap 2026</a></li>
+          </ul>
+        </div>
+
+        <!-- Links column 2 -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Resources</h4>
+          <ul class="footer-nav">
+            <li><a href="#faq">Documentation</a></li>
+            <li><a href="#features">API Reference</a></li>
+            <li><a href="#preview">Component Library</a></li>
+            <li><a href="#workflow">Community Forum</a></li>
+            <li><a href="#hero">Open Source Hub</a></li>
+          </ul>
+        </div>
+
+        <!-- Links column 3 -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Company</h4>
+          <ul class="footer-nav">
+            <li><a href="#hero">About Lumina</a></li>
+            <li><a href="#pricing">Careers <span class="sub-badge">Hiring</span></a></li>
+            <li><a href="#hero">Security & Trust</a></li>
+            <li><a href="#faq">Privacy Policy</a></li>
+            <li><a href="#faq">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-row">
+        <div class="copyright-text">
+          &copy; <span id="currentYear">2026</span> Lumina Technologies Inc. All rights reserved. Crafted with precision & clean aesthetics.
+        </div>
+        <div class="system-status-pill">
+          <span class="status-indicator-green"></span>
+          <span>All Systems Operational (99.99%)</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING BACK TO TOP BUTTON -->
+  <button class="back-to-top" id="backToTopBtn" aria-label="Scroll back to top" title="Scroll to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- INTERACTIVE DEMO MODAL -->
+  <div class="modal-backdrop" id="demoModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <span class="badge-pill">Interactive Sandbox</span>
+          <h3 id="modalTitle">Lumina Dynamic Engine Demo</h3>
+        </div>
+        <button class="modal-close-btn" id="closeModalBtn" aria-label="Close modal">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-desc">
+          Test real-time component physics and live responsiveness below. Click any node to trigger dynamic calculation.
+        </p>
+        <div class="modal-interactive-canvas" id="modalCanvas">
+          <div class="canvas-node node-a" id="nodeA">Client UI Layer (90fps)</div>
+          <div class="canvas-wire">
+            <span class="flow-pulse"></span>
+          </div>
+          <div class="canvas-node node-b" id="nodeB">Neural Engine Cluster</div>
+          <div class="canvas-wire">
+            <span class="flow-pulse delay-1"></span>
+          </div>
+          <div class="canvas-node node-c" id="nodeC">Edge Cache (Zero Wait)</div>
+        </div>
+        <div class="modal-status-text" id="modalStatusText">
+          System state: Nominal. Ready for simulation.
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" id="modalSecondaryClose">Close Sandbox</button>
+        <button class="btn btn-primary" id="modalSimulateBtn">Simulate Spike Event</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- JavaScript Script -->
+  <script src="script.js"></script>
+</body>
+</html>
